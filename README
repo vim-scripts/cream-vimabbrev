@@ -1,0 +1,34 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=471
+
+
+*** WARNING! ***
+This script is very much a work in progress and has several known bugs and likely many unknown ones. You will find little automatic success with it. It is being provided here for information only. Be hereby warned that using these functions will tear valid Vim script limb from limb leaving a trail of crying and gnashing of teeth behind.
+
+That said, we would very much appreciate your feedback on correcting said anamolies. Feel free to forward suggestions or fixes to:
+  digitect (at) mindspring  com
+
+
+Description:
+
+This script is currently one half of a set of functions to convert Vim command and option names between short/abbreviated and long/full name forms. (Ex. "fu" => "function", "e" => "edit") These are sometimes indicated like "fu[nction]" or  "e[dit]".
+
+The script currently only converts from short to long. Based on my own preferences, I am less motivated to do the other side. ;) But I conceed it would be useful to have a polished routine to help going back and forth between the two for those with preferences for either readability or bandwidth conservation.
+
+The script contains plenty of working debris at the bottom which shouldn't impact the code above. I have tried to be as complete as possible by using Vim's own syntax and option lists to compile the substitutions from. However you may notice omissions.
+
+Dependancies:
+
+multvals.vim (http://www.vim.org/script.php?script_id=171)
+  by Hari Krishna Dara, for the arrays of items to be substituted.
+
+ToDo:
+
+* Avoid mapping syntaxes.
+* Avoid heinous "normal af|g^" => "normal af|global^" error
+* Avoid heinous "normal j+r" => "normal j+read" error
+* Add whitespace separators around evaluation operators and concatenation symbols.
+
+
+This is one of many custom utilities and functions for gVim from the Cream project (http://cream.sourceforge.net), a configuration of Vim for those of us familiar with Apple and Windows software.
+
+
